@@ -1,0 +1,6 @@
+[run]
+source =
+    ./wordle
+
+omit =
+    ./wordle/tests/*

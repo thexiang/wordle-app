@@ -1,0 +1,34 @@
+[tool.black]
+line-length = 120
+target-version = ["py311"]
+skip-string-normalization = true
+exclude = """
+    (
+      ^/env/
+    | ^/mongo-data/
+    )
+"""
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".direnv",
+    ".git",
+    ".mypy_cache",
+    ".ruff_cache",
+    "__pypackages__",
+    "build",
+    "dist",
+    "env",
+    "mongo-data",
+    "ui"
+]
+
+[tool.isort]
+profile = "black"
+line_length = 120
+force_single_line = true
+filter_files = true
+skip_glob = ["/env","/mongo-data"]

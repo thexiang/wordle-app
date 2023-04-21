@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  background-color: #5A5A5A;
+}
+
+h1, h2 {
+  color: white;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+/* layout */
+.layout {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10rem;
+  max-width: 800px;
+}
+
+/* keyboard */
+.keyboard-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  align-content: space-between;
+}
+
+.keyboard-letter {
+  border-radius: 5px;
+  margin: 10px;
+  padding-top: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 25px;
+  background-color: white;
+}
+
+/* gameboard */
+.game-board-rows-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 350px;
+}
+
+.game-board-letters-row {
+  display: grid;
+  grid-template-columns: repeat(6, 75px);
+  margin-bottom: 10px;
+}
+
+.gameboard-letter-box {
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  border: 1px solid gray;
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* gamebaord letter */
+.letter-incorrect {
+  background-color: #3a3a3d;
+}
+
+.letter-correct {
+  background-color: #538d4e;
+}
+
+.letter-wrong-position {
+  background-color: #b59f3b;
+}

@@ -1,0 +1,9 @@
+pytest
+mongomock
+pytest-cov
+pytest-mock
+pylint
+pytest
+ruff
+black
+isort
